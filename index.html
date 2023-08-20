@@ -21,6 +21,9 @@
             <button onclick="connectMetamask()">Connect Wallet</button>
         </div>
     </div>
+
+    <p class="message">Input your numbers</p>
+    
     <div class="container">
         <input type="number">    
         <input type="number">
@@ -29,7 +32,15 @@
         <input type="number">
         <input type="number">
     </div>
-    <div id="wrapper">
+    <div class="crypto-input">
+        <input type="number" id="cryptoAmount" step="0.0001" min="0" >
+        <select id="cryptoCurrency">
+            <option value="ETH">ETH</option>
+            <option value="BTC">BTC</option>
+            <option value="XRP">XRP</option>
+            <!-- Add more options as needed -->
+        </select>
+    <div id="wrapper">  
         <button class="Play">Play</button>
     </div>
 </body>
